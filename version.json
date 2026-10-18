@@ -2,19 +2,22 @@
   "updated": "2026-10-18",
   "display": {
     "package": "com.c2mhud.maplab.display",
-    "versionName": "0.5.11",
-    "versionCode": 16,
+    "versionName": "0.5.12",
+    "versionCode": 17,
     "minSdk": 22,
-    "url": "https://github.com/baibaipang/google-maps-hud-android/releases/download/v0.5.11/hud-map-display-0.5.11.apk",
-    "sha256": "9e19c4905df31e6cd4e41f4ed7a69006562ec64c8bcc6c68afdde077882a1cc8",
-    "notes": "去掉有引导线时左上角“OSM 引导·估算”字样；含精简/完整切换、开机自启、更新后自动重开。未做模拟器验证、未装实机。"
+    "url": "https://github.com/baibaipang/google-maps-hud-android/releases/download/v0.5.12/hud-map-display-0.5.12.apk",
+    "sha256": "35b0fae69d726699eca21942c80a4ebbb6b72790372ef4ad73a27083b8fa160d",
+    "size": 57820,
+    "notes": "设置里新增“软件更新”：可手动检查，联网后自动检查（最多每 6 小时一次）；下载后核对校验值、包名、版本、签名再安装。需在系统设置→安全里打开“未知来源”。"
   },
   "sender": {
     "package": "com.c2mhud.maplab.sender",
-    "versionName": "0.5.11",
-    "versionCode": 16,
-    "url": "https://github.com/baibaipang/google-maps-hud-android/releases/download/v0.5.11/hud-map-sender-0.5.11.apk",
-    "sha256": "506e34d5dd26356dcb6b1132d862bc1b3d7ae5fc8eff2b3e545377cf8c5aaad4",
-    "notes": "首页加“精简画面（原版样式）”开关并与车萝卜同步。未做模拟器验证。"
+    "versionName": "0.5.12",
+    "versionCode": 17,
+    "minSdk": 22,
+    "url": "https://github.com/baibaipang/google-maps-hud-android/releases/download/v0.5.12/hud-map-sender-0.5.12.apk",
+    "sha256": "c4da05c38473e8c5bc267655fa5372d551e8bd563d6a54e39683017e94ad69d5",
+    "size": 1913455,
+    "notes": "设置→其他新增“软件更新”：可手动检查，打开应用时自动检查（最多每 6 小时一次）；下载后核对校验值、包名、版本、签名再安装。第一次需允许本应用“安装未知应用”。"
   }
 }

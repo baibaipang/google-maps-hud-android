@@ -5,7 +5,7 @@
 **手机跑 Google Maps，HUD 上显示转弯箭头、距离、路名、车速和离线道路。**
 不刷机、不接 OBD、不用原厂 App —— 两个 APK，一部手机加一台安卓 HUD 就能用。
 
-[![Release](https://img.shields.io/github/v/release/baibaipang/google-maps-hud-android?include_prereleases&label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC)](https://github.com/baibaipang/google-maps-hud-android/releases)
+[![Release](https://img.shields.io/github/v/release/baibaipang/google-maps-hud-android?include_prereleases&sort=semver&label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC)](https://github.com/baibaipang/google-maps-hud-android/releases)
 [![Downloads](https://img.shields.io/github/downloads/baibaipang/google-maps-hud-android/total?label=%E4%B8%8B%E8%BD%BD%E6%AC%A1%E6%95%B0)](https://github.com/baibaipang/google-maps-hud-android/releases)
 ![HUD](https://img.shields.io/badge/HUD-Android%205.1%2B-3DDC84?logo=android&logoColor=white)
 ![Phone](https://img.shields.io/badge/%E6%89%8B%E6%9C%BA-Android%20%2B%20Google%20Maps-4285F4?logo=googlemaps&logoColor=white)
@@ -45,6 +45,7 @@
 | 🔀 | **精简 / 完整一键切换** | 精简＝只有箭头距离车速；完整＝加上地图和引导线。手机与 HUD 两边同步 |
 | 🔌 | **自动连接、开机自启** | HUD 连上手机热点后自动配对重连；开机直接进入 HUD 画面 |
 | 🪞 | **适配投影** | HUD 上双击进设置：亮度、大小、镜像、旋转 180°、显示时间 |
+| ⬆️ | **软件更新** | 手机端和 HUD 端设置里都能检查更新，从本仓库下载并核对后安装；[历史版本](CHANGELOG.md)可随时下载 |
 | 📴 | **离线可用** | 地图下好后，日常行车不需要地图网络服务 |
 
 ## HUD 画面
@@ -127,22 +128,24 @@ flowchart LR
 
 | 应用 | 装在哪 | 包名 | 当前版本 |
 |---|---|---|---|
-| hud-map-display | HUD（车萝卜 C2-M 等） | `com.c2mhud.maplab.display` | 0.5.11 |
-| hud-map-sender | 手机 | `com.c2mhud.maplab.sender` | 0.5.11 |
+| hud-map-display | HUD（车萝卜 C2-M 等） | `com.c2mhud.maplab.display` | 0.5.12 |
+| hud-map-sender | 手机 | `com.c2mhud.maplab.sender` | 0.5.12 |
+
+每个版本更新了什么、历史版本安装包下载，见 [更新记录与历史版本](CHANGELOG.md)。
 
 每个安装包的 SHA256 写在 [`version.json`](version.json) 里，下载后核对一致再装：
 
 ```powershell
 # Windows
-certutil -hashfile hud-map-display-0.5.11.apk SHA256
+certutil -hashfile hud-map-display-0.5.12.apk SHA256
 ```
 
 ```bash
 # macOS / Linux
-shasum -a 256 hud-map-display-0.5.11.apk
+shasum -a 256 hud-map-display-0.5.12.apk
 ```
 
-> `version.json` 也是以后 HUD 端“检查更新”要读的文件，格式请不要随意改。
+> `version.json` 是两端“软件更新”读取的文件（HUD 端读 `display` 段，手机端读 `sender` 段），格式请不要随意改。
 
 ## 常见问题
 
@@ -181,7 +184,7 @@ shasum -a 256 hud-map-display-0.5.11.apk
 - 离线地图目前只覆盖 **美国 50 州和华盛顿特区**；其他地区只显示精简画面（箭头、距离、车速）。
 - 引导线、道路等级、“临近高速出口”判断都是基于 OSM 的估算，复杂路口可能不准。
 - 定位过期、超出地图范围或附近没有道路时，自动退回精简画面，不挡导航。
-- 当前 Release 标为**预发布**：0.5.11 两端已在电脑上构建通过，部分新功能还在等实车确认，详见每个 Release 的说明。
+- 当前 Release 标为**预发布**：0.5.12 两端已在电脑上构建并在模拟器上验证过软件更新，部分新功能还在等实车确认，详见每个 Release 的说明。
 
 ## 致谢与许可
 
