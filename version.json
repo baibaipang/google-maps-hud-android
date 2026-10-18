@@ -1,0 +1,20 @@
+{
+  "updated": "2026-10-18",
+  "display": {
+    "package": "com.c2mhud.maplab.display",
+    "versionName": "0.5.11",
+    "versionCode": 16,
+    "minSdk": 22,
+    "url": "https://github.com/baibaipang/c2m-hud-releases/releases/download/v0.5.11/hud-map-display-0.5.11.apk",
+    "sha256": "9e19c4905df31e6cd4e41f4ed7a69006562ec64c8bcc6c68afdde077882a1cc8",
+    "notes": "去掉有引导线时左上角“OSM 引导·估算”字样；含精简/完整切换、开机自启、更新后自动重开。未做模拟器验证、未装实机。"
+  },
+  "sender": {
+    "package": "com.c2mhud.maplab.sender",
+    "versionName": "0.5.11",
+    "versionCode": 16,
+    "url": "https://github.com/baibaipang/c2m-hud-releases/releases/download/v0.5.11/hud-map-sender-0.5.11.apk",
+    "sha256": "506e34d5dd26356dcb6b1132d862bc1b3d7ae5fc8eff2b3e545377cf8c5aaad4",
+    "notes": "首页加“精简画面（原版样式）”开关并与车萝卜同步。未做模拟器验证。"
+  }
+}
