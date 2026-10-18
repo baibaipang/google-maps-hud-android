@@ -5,8 +5,8 @@
 **手机跑 Google Maps，HUD 上显示转弯箭头、距离、路名、车速和离线道路。**
 不刷机、不接 OBD、不用原厂 App —— 两个 APK，一部手机加一台安卓 HUD 就能用。
 
-[![Release](https://img.shields.io/github/v/release/baibaipang/c2m-hud-releases?include_prereleases&label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC)](https://github.com/baibaipang/c2m-hud-releases/releases)
-[![Downloads](https://img.shields.io/github/downloads/baibaipang/c2m-hud-releases/total?label=%E4%B8%8B%E8%BD%BD%E6%AC%A1%E6%95%B0)](https://github.com/baibaipang/c2m-hud-releases/releases)
+[![Release](https://img.shields.io/github/v/release/baibaipang/google-maps-hud-android?include_prereleases&label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC)](https://github.com/baibaipang/google-maps-hud-android/releases)
+[![Downloads](https://img.shields.io/github/downloads/baibaipang/google-maps-hud-android/total?label=%E4%B8%8B%E8%BD%BD%E6%AC%A1%E6%95%B0)](https://github.com/baibaipang/google-maps-hud-android/releases)
 ![HUD](https://img.shields.io/badge/HUD-Android%205.1%2B-3DDC84?logo=android&logoColor=white)
 ![Phone](https://img.shields.io/badge/%E6%89%8B%E6%9C%BA-Android%20%2B%20Google%20Maps-4285F4?logo=googlemaps&logoColor=white)
 ![Screen](https://img.shields.io/badge/%E7%94%BB%E9%9D%A2-240%C3%97120%20%E8%87%AA%E5%8A%A8%E7%BC%A9%E6%94%BE-555)
@@ -97,7 +97,7 @@
 
 ## 快速开始
 
-1. **下载**：到 [Releases](https://github.com/baibaipang/c2m-hud-releases/releases) 下载两个 APK
+1. **下载**：到 [Releases](https://github.com/baibaipang/google-maps-hud-android/releases) 下载两个 APK
    - `hud-map-display-x.y.z.apk` → 装到 HUD
    - `hud-map-sender-x.y.z.apk` → 装到手机
 2. **手机**：打开应用，点 **启动并连接车萝卜**。按提示打开三项必要权限：读取 Maps 导航通知、精确定位、系统 GPS（绿色＝已开，红色＝未开）。
